@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+body {
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; закомментирован для примера из строки 1*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.6em;
+  /* можно использовать px или em в качестве ед.измерения */
+  font-weight: normal;
+  /* background: #f1f1f1; */
+  color: #0f141e;
+  /* семейство font можно объединить и записать: font: normal 20px 'Roboto', sans-serif;*/
+  /* text-decoration: line-through; */
+  /* text-decoration: underline; */
+  /* font-style: italic; */
+  /* letter-spacing: 2px; */
+  /* word-spacing: 20px; */
+  /* также нужно учитывать, когда задаем размер шрифта, что более общее назначение будет ниже в приорите, чем тот, который указан конкертно. То есть, если зададим определенный размер для всего, то он не поменяется. так как конкретные размер прописан для конкретного текста в параграфе*/
+ /* 
+ .css p {
+  font-family: Verdana;
+  font-size: 20px;
+  font-weight: bold;
+ */}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+}
+
+a:visited {
+  color: grey;
+}
+
+.conteiner {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 30px;
+}
+.avatar {
+  width: 200px;
+  border-radius: 28px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, .25);
+}
+
+ .info {
+  margin-bottom: 10px;
+  display: flex;
+ }
+ @media (max-width: 700px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  }
+   
+ .info-text {
+  margin-left: 30px;
+ }
+ .info-text h3 {
+  margin-bottom: 0;
+  padding: 0;
+ }
+
+ .info-text p {
+  font-style: italic;
+  font-weight: bold;
+  color: #868686;
+  margin: 0;
+ }
+
+ .info-text h2 {
+  margin-bottom: 10px;
+ }
+ 
+
+ .card {
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  background: #fff;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+ }
+ .card h2 {
+  margin: 10px;
+ }
+.bg-yellow{
+  background: #fff9dc;
+}
+.bg-red{
+  background: #ffe5e5;
+}
+
+.btn {
+  background: #000;
+  padding: 15px 20px;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  opacity: .8;
+}
+.list {
+  padding: 0 20px;
+}
+.list li {
+  color: #86898f;
+  margin-bottom: 10px;
+}
+.table {
+  width: 100%;
+}
+.table td{
+  padding-bottom: 10px;
+}
+.table td:nth-child(2),
+.table td:nth-child(3){
+  color: #86898f;
+}
+.form h2 {
+text-align: center;
+}
+
+.form-row {
+margin-bottom: 10px;
+display: flex;
+}
+
+.form-row .form-group {
+/* display: inline-block; */
+margin-right: 20px;
+width: 50%;
+/* width: calc(50% - 20px) как вариант решения задачи, если блоки не смещаются в одну строчку*/
+}
+/* ниже кодом можно решить перехода блока в одну строчку черех  */
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+@media (max-width: 700px) {
+  .form-row {
+   display: block;
+    }
+
+  .form-row .form-group {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }  
+}
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #86898f;
+}
+.form-group input,
+.form-group textarea {
+width: 100%;
+box-sizing: border-box;
+border: none;
+background: transparent;
+border-bottom: 1px solid #ccc;
+color: #000;
+padding: 15px 0 10px;
+outline: none;
+font-family: inherit;
+}
